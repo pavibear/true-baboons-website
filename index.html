@@ -1,1 +1,113 @@
-<h1>True Baboons Website</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>True Baboons</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #696a6d;
+      display: flex;
+      justify-content: center;
+      background-color: #ebede9;
+      padding-top: min(5vw,8rem);
+    }
+    .container {
+      width: min(90vw, 3000px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .logo {
+      margin: clamp(4rem, 5vw, 8rem) 0;
+    }
+    .logo img, .games img {
+      width: 100%;
+      height: auto;
+    }
+    .header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h2 {
+      margin: 0;
+      font-size: 5rem;
+    }
+    .section_title {
+      margin-bottom: clamp(2rem, 5vw, 4rem);
+    }
+    .contact {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      font-size: 2.5rem;
+      white-space: nowrap;
+    }
+    .contact img {
+      width: 8rem;
+      height: auto;
+      display: block;
+    }
+    .contact a {
+      display: flex;
+      align-items: center;
+    }
+    a {
+      color: inherit;          /* Use parent’s text color */
+      text-decoration: none;   /* Optional: remove underline */
+    }
+
+    a:visited,
+    a:hover,
+    a:active {
+      color: inherit;          /* Keep it consistent in all states */
+    }
+      </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h2>Indie Game Studio</h2>
+      <div class="contact">
+        <a href="https://bsky.app/profile/patrickbeer.bsky.social" target="_blank" title="Bluesky">
+          <img src="assets/bluesky_icon.png" alt="Bluesky" />
+        </a>
+        <a href="https://www.linkedin.com/in/patrick-beer/" target="_blank" title="LinkedIn">
+          <img src="assets/linked_in_icon.png" alt="LinkedIn" />
+        </a>
+        <div class="e-mail">
+          Patrick Beer<br>
+          <script>
+            const user = "patrick";
+            const domain = "truebaboons.com";
+            document.write(`<a href="mailto:${user}@${domain}">${user}@${domain}</a>`);
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo">
+      <img src="assets/true_baboons_logo.png" alt="True Baboons Logo" />
+    </div>
+
+    <div class="section_title">
+      <h2>Currently developing:</h2>
+    </div>
+
+    <div class="games">
+      <a href="https://upalumundi.com" target="_blank">
+        <img src="assets/upalu_mundi_website_banner.png" alt="Upalu Mundi Banner" />
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
