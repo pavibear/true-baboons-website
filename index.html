@@ -12,17 +12,18 @@
       display: flex;
       justify-content: center;
       background-color: #ebede9;
-      padding-top: min(5vw,8rem);
+      padding: min(5vw,3rem);
     }
     .container {
-      width: min(90vw, 1500px);
+      width: min(100vw, 1200px);
+      min-width: 435px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
     }
     .logo {
-      margin: clamp(4rem, 5vw, 8rem) 0;
+      margin: clamp(0.5rem, 5vw, 2rem) 0;
     }
     .logo img, .games img {
       width: 100%;
@@ -34,23 +35,24 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      gap: 1rem;
     }
     h2 {
+      font-size: 2rem;
       margin: 0;
-      font-size: 5rem;
     }
     .section_title {
-      margin-bottom: clamp(2rem, 5vw, 4rem);
+      margin-bottom: clamp(0.5rem, 5vw, 1rem);
     }
     .contact {
       display: flex;
       align-items: center;
-      gap: 2rem;
-      font-size: 2.5rem;
+      gap: 1rem;
+      font-size: 1rem;
       white-space: nowrap;
     }
     .contact img {
-      width: 8rem;
+      width: 3rem;
       height: auto;
       display: block;
     }
