@@ -24,7 +24,7 @@
     .logo {
       margin: clamp(0.5rem, 5vw, 2rem) 0;
     }
-    .logo img, .games img {
+    .logo img, .game img {
       width: 100%;
       height: auto;
     }
@@ -43,16 +43,19 @@
     .section_title {
       margin-bottom: clamp(0.5rem, 5vw, 1rem);
     }
-    .contact {
+    .game {
+      margin-top: clamp(0.5rem, 5vw, 1rem)
+    }
+    .contact, .game_links {
       display: flex;
       align-items: center;
       gap: 1rem;
       font-size: clamp(0.5rem, 2.5vw, 1rem);
       white-space: nowrap;
     }
-    .contact img {
-      width: clamp(2rem, 5vw, 3rem);
-      height: auto;
+    .contact img, .game_links img {
+      height: clamp(2rem, 5vw, 3rem);
+      width: auto;
       display: block;
     }
     .contact a {
@@ -102,7 +105,16 @@
       <h2>Currently developing:</h2>
     </div>
 
-    <div class="games">
+    <div class="game_links">
+      <a href="https://store.steampowered.com/app/3623200/Upalu_Mundi/" target="_blank" title="Steam">
+        <img src="assets/steam_icon.png" alt="Bluesky" />
+      </a>
+      <a href="https://discord.com/invite/dSHhmQF4s3" target="_blank" title="Discord">
+        <img src="assets/discord_icon.png" alt="Discord" />
+      </a>
+    </div>
+
+    <div class="game">
       <a href="https://upalumundi.com" target="_blank">
         <img src="assets/upalu_mundi_website_banner.png" alt="Upalu Mundi Banner" />
       </a>
