@@ -22,7 +22,7 @@
       align-items: center;
     }
     .logo {
-      margin: clamp(0.5rem, 5vw, 2rem) 0;
+      margin-top: clamp(0.5rem, 5vw, 2rem);
     }
     .logo img, .game img {
       width: 100%;
@@ -40,20 +40,33 @@
       font-size: clamp(1rem, 5vw, 2rem);
       margin: 0;
     }
-    .section_title {
-      margin-bottom: clamp(0.5rem, 5vw, 1rem);
+    .steam, .game{
+      margin-top: clamp(0.5rem, 5vw, 1rem);
+      width: 100%;
+      display: flex;
+      justify-content: center;  
     }
     .game {
-      margin-top: clamp(0.5rem, 5vw, 1rem)
+      padding: 1.1%;
+      background-color: black;
+      box-sizing: border-box  
     }
-    .contact, .game_links {
+    .steam iframe {
+      width: 90%;
+      max-width: 700px;
+    }
+    .game iframe{
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+    .contact {
       display: flex;
       align-items: center;
       gap: 1rem;
       font-size: clamp(0.5rem, 2.5vw, 1rem);
       white-space: nowrap;
     }
-    .contact img, .game_links img {
+    .contact img {
       height: clamp(2rem, 5vw, 3rem);
       width: auto;
       display: block;
@@ -101,23 +114,12 @@
       <img src="assets/true_baboons_logo.png" alt="True Baboons Logo" />
     </div>
 
-    <div class="section_title">
-      <h2>Currently developing:</h2>
-    </div>
-
-    <div class="game_links">
-      <a href="https://store.steampowered.com/app/3623200/Upalu_Mundi/" target="_blank" title="Steam">
-        <img src="assets/steam_icon.png" alt="Bluesky" />
-      </a>
-      <a href="https://discord.com/invite/dSHhmQF4s3" target="_blank" title="Discord">
-        <img src="assets/discord_icon.png" alt="Discord" />
-      </a>
+    <div class="steam">
+      <iframe src="https://store.steampowered.com/widget/3623200/" frameborder="0" width="646" height="190"></iframe>
     </div>
 
     <div class="game">
-      <a href="https://upalumundi.com" target="_blank">
-        <img src="assets/upalu_mundi_website_banner.png" alt="Upalu Mundi Banner" />
-      </a>
+      <iframe src="https://www.youtube-nocookie.com/embed/gmEIGLZZX5E?loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
   </div>
